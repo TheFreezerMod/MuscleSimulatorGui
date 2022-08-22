@@ -1,0 +1,95 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local uno = Instance.new("TextButton")
+local diez = Instance.new("TextButton")
+local cincuenta = Instance.new("TextButton")
+local quinientos = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 5, 5)
+Frame.Position = UDim2.new(0.80865103, 0, -0.0124776978, 0)
+Frame.Size = UDim2.new(0, 261, 0, 159)
+
+uno.Name = "uno"
+uno.Parent = ScreenGui
+uno.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+uno.Position = UDim2.new(0.80865103, 0, 0, 0)
+uno.Size = UDim2.new(0, 92, 0, 50)
+uno.Font = Enum.Font.SciFi
+uno.Text = "+1"
+uno.TextColor3 = Color3.fromRGB(74, 255, 249)
+uno.TextSize = 33.000
+uno.MouseButton1Down:connect(function()
+	for i=1, 1000000 do
+		game.ReplicatedStorage.addStrength:FireServer(Workspace.AlexCandy_789.Weight.Handle, 1)
+		wait(0,001)
+	end
+end)
+
+diez.Name = "diez"
+diez.Parent = ScreenGui
+diez.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+diez.Position = UDim2.new(0.932551324, 0, 0, 0)
+diez.Size = UDim2.new(0, 92, 0, 50)
+diez.Font = Enum.Font.SciFi
+diez.Text = "+10"
+diez.TextColor3 = Color3.fromRGB(74, 255, 249)
+diez.TextSize = 33.000
+diez.MouseButton1Down:connect(function()
+	for i=1, 1000000 do
+		game.ReplicatedStorage.addStrength:FireServer(Workspace.AlexCandy_789.Weight.Handle, 10)
+		wait(0,001)
+	end
+end)
+
+cincuenta.Name = "cincuenta"
+cincuenta.Parent = ScreenGui
+cincuenta.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+cincuenta.Position = UDim2.new(0.80865103, 0, 0.151561007, 0)
+cincuenta.Size = UDim2.new(0, 92, 0, 50)
+cincuenta.Font = Enum.Font.SciFi
+cincuenta.Text = "+50"
+cincuenta.TextColor3 = Color3.fromRGB(74, 255, 249)
+cincuenta.TextSize = 33.000
+cincuenta.MouseButton1Down:connect(function()
+	for i=1, 1000000 do
+		game.ReplicatedStorage.addStrength:FireServer(Workspace.AlexCandy_789.Weight.Handle, 50)
+		wait(0,001)
+	end
+end)
+
+quinientos.Name = "quinientos"
+quinientos.Parent = ScreenGui
+quinientos.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+quinientos.Position = UDim2.new(0.932551324, 0, 0.151561007, 0)
+quinientos.Size = UDim2.new(0, 92, 0, 50)
+quinientos.Font = Enum.Font.SciFi
+quinientos.Text = "+500"
+quinientos.TextColor3 = Color3.fromRGB(74, 255, 249)
+quinientos.TextSize = 33.000
+quinientos.MouseButton1Down:connect(function()
+	for i=1, 1000000 do
+		game.ReplicatedStorage.addStrength:FireServer(Workspace.AlexCandy_789.Weight.Handle, 500)
+		wait(0,001)
+	end
+end)
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.830645144, 0, 0.074537307, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Muscle+ GUI"
+TextLabel.TextColor3 = Color3.fromRGB(1, 251, 255)
+TextLabel.TextSize = 40.000
